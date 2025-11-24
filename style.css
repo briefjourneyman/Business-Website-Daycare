@@ -13,13 +13,12 @@ body {
 /* ===========================
    HEADER
    =========================== */
-
 header {
   background: #4c6ef5;
   color: white;
-  padding: 4px 0;          /* 🔥 ultra small height */
+  padding: 4px 0;
   text-align: center;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1); /* optional subtle shadow */
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
 header nav ul {
@@ -28,195 +27,28 @@ header nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 25px;                /* space between links */
+  gap: 25px;
 }
 
 header nav a {
   color: white;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.95rem;       /* slightly smaller text */
+  font-size: 0.95rem;
 }
-
-
-
-header + section {
-  padding: 0 !important;
-  margin: 0 !important;
-  background: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-}
-
-
 
 
 /* ===========================
-   HERO SECTION
+   HOMEPAGE HERO
+   (leave this alone)
    =========================== */
-  #hero {
-  max-width: 100%;            /* removes the white bars */
-  margin: 0;                  /* removes centering */
-  padding: 0;                 /* removes white padding */
-  border-radius: 0;           /* removes rounded corners */
-  box-shadow: none;           /* removes card shadow */
-  height: 100vh;              /* full screen height */
-  position: relative;         /* anchor for ::before */
+#hero {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  height: 100vh;
+  position: relative;
   background-image: url("aaron-burden-1zR3WNSTnvY-unsplash.jpg");
-  background-size: cover;     /* fills the whole screen */
-  background-position: center;/* centers the crayons */
-  background-repeat: no-repeat;
-  display: flex;              /* center hero-content */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-/* Dark overlay */
-#hero::before {
-  content: "";                     /* REQUIRED for pseudo-elements */
-  position: absolute;              /* sits on top of hero */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.45);    /* dark overlay */
-  z-index: 1;                      /* overlay sits ABOVE image */
-}
-
-/* HERO TEXT */
-.hero-content {
-  position: relative;     /* above overlay */
-  z-index: 2;             /* above ::before */
-  color: white;           /* readable text */
-  padding: 20px;          /* spacing */
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.hero-btn {
-  background: #4c6ef5;
-  color: white;
-  padding: 12px 25px;
-  text-decoration: none;
-  font-size: 1.1rem;
-  border-radius: 6px;
-}
-
-
-/* ===========================
-   FORM STYLES
-   =========================== */
-input, textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-
-/* ===========================
-   BUTTONS
-   =========================== */
-button {
-  background: #4c6ef5;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-
-/* ===========================================
-   ABOUT PAGE STYLING
-   =========================================== */
-
-.about-page {
-  background: #fff8d9; /* warm soft yellow */
-  padding-bottom: 60px;
-}
-
-/* Hero Title Section */
-.about-hero {
-  text-align: center;
-  padding: 60px 20px;
-  background: #ffeeb5; /* softer yellow */
-  border-bottom: 3px solid #fcd96f;
-}
-
-.about-hero h1 {
-  font-size: 2.5rem;
-  color: #b14e56; /* soft red/pink */
-  margin-bottom: 10px;
-}
-
-.about-hero p {
-  font-size: 1.2rem;
-  color: #444;
-}
-
-/* About Content Layout */
-.about-content {
-  max-width: 1100px;
-  margin: 40px auto;
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  padding: 0 20px;
-}
-
-.about-text {
-  flex: 1;
-  max-width: 480px;     /* keeps paragraphs from stretching too far */
-  line-height: 1.8;     /* smoother readable text */
-}
-
-
-.about-text h2 {
-  font-size: 2rem;
-  color: #b14e56;
-  margin-bottom: 10px;
-}
-
-.about-text p {
-  color: #333;
-  margin-bottom: 20px;   /* bigger breathing room */
-  line-height: 1.8;       /* matches the parent */
-}
-
-
-/* Button */
-.about-btn {
-  display: inline-block;
-  background: #b14e56; 
-  color: white;
-  padding: 12px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-/* Image */
-.about-image img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* If on mobile, stack content */
-@media (max-width: 900px) {
-  .about-content {
-    flex-direction: column;
-    text-align: center;
-  }
-}
+  background-size: c
