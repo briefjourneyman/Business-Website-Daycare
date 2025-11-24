@@ -227,3 +227,37 @@ button {
     height: 300px;
   }
 }
+/* ===========================
+   ENROLLMENT CTA (Programs Page)
+=========================== */
+
+.enroll-cta {
+  margin-top: 50px;
+  padding: 35px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.enroll-cta h2 {
+  font-size: 1.9rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.enroll-cta p {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.enroll-cta a {
+  color: #4c6ef5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.enroll-cta a:hover {
+  text-decoration: underline;
+}
