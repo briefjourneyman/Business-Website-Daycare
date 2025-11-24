@@ -122,101 +122,60 @@ button {
    =========================================== */
 
 /* remove old yellow background */
-.about-page {
-  background: white;
-  padding-bottom: 60px;
+/* SPLIT LAYOUT FOR ABOUT PAGE */
+.about-split {
+  display: flex;
+  min-height: 100vh;
 }
 
-/* ABOUT HERO WITH PENCILS BACKGROUND */
-/* ABOUT HERO WITH PENCILS BACKGROUND */
-.about-hero {
+/* LEFT SIDE: IMAGE */
+.about-image {
+  flex: 1;
   background-image: url("kelli-tungay-2LJ4rqK2qfU-unsplash.jpg");
   background-size: cover;
-  background-position: center top;
+  background-position: left center;
   background-repeat: no-repeat;
-
-  min-height: 550px;
-  padding: 160px 20px;
-  text-align: center;
-  color: white;
-  position: relative;
 }
 
-/* overlay */
-.about-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.45);
-  z-index: 1;
-}
-
-.about-hero h1,
-.about-hero p {
-  position: relative;
-  z-index: 2;
-}
-
-.about-hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-}
-
-.about-hero p {
-  font-size: 1.2rem;
-}
-
-
-/* ABOUT CONTENT — TEXT ON THE RIGHT */
-.about-content {
-  max-width: 1100px;
-  margin: 40px auto;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 20px;
-}
-
-/* white text box */
+/* RIGHT SIDE: TEXT */
 .about-text {
-  width: 55%;
-  background: rgba(255,255,255,0.9);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  flex: 1;
+  padding: 60px;
+  background: white;
 }
 
-.about-text h2 {
-  font-size: 2rem;
-  color: #b14e56;
-  margin-bottom: 10px;
+.about-text h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 5px;
 }
 
 .about-text p {
-  color: #333;
-  margin-bottom: 20px;
-  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 18px;
+  line-height: 1.7;
 }
 
+/* Button */
 .about-btn {
   display: inline-block;
+  margin-top: 15px;
   background: #b14e56;
   color: white;
   padding: 12px 25px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  margin-top: 10px;
 }
 
-/* mobile */
+/* MOBILE STACK */
 @media (max-width: 900px) {
-  .about-content {
+  .about-split {
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
   }
 
-  .about-text {
-    width: 100%;
+  .about-image {
+    height: 300px;
   }
 }
